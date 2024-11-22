@@ -64,10 +64,18 @@ public class CharacterListFragment extends Fragment {
 
         characters.add(new CharacterData(
                 R.drawable.peach,
-                R.drawable.yoshi,
+                R.drawable.peach_p,
                 "Peach",
                 "Es la princesa del Reino Champinon",
                 "Valentia y astucia"
+
+        ));
+        characters.add(new CharacterData(
+                R.drawable.luigi,
+                R.drawable.luigi_p,
+                "Luigi",
+                "Luigi es el hermano menor de Mario y su compi",
+                "Puede saltar mas alto que Mario"
 
         ));
     }
