@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainFragment">
+
+    <!-- Definición del MainFragment -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="lajara.lopez.pmdm.jlltarea2.CharacterListFragment"
+        android:label="Main Fragment">
+
+        <!-- Acción para navegar a GameDetailFragment -->
+<!--        <action-->
+<!--            android:id="@+id/lajara.lopez.pmdm.jlltarea2.CharacterDetailFragment"-->
+<!--            app:destination="@id/gameDetailFragment" />-->
+    </fragment>
+
+    <!-- Definición del GameDetailFragment -->
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="lajara.lopez.pmdm.jlltarea2.CharacterDetailFragment"
+        android:label="Character Detail Fragment" />
+</navigation>
