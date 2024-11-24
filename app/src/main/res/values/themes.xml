@@ -7,10 +7,10 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <!-- SplashScreen cofiguration-->
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/mario</item>
-        <item name="android:windowSplashScreenAnimationDuration">1000</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/colorPrimary</item>
-        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/mario</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">2000</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:ignore="NewApi">@color/colorPrimaryDark</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />

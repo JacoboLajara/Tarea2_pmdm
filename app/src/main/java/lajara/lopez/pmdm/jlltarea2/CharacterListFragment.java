@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 
 import lajara.lopez.pmdm.jlltarea2.databinding.CharacterListFragmentBinding;
@@ -78,6 +81,8 @@ public class CharacterListFragment extends Fragment {
                 "Puede saltar mas alto que Mario"
 
         ));
+
+        Snackbar.make(binding.getRoot(), "Bienvenidos al mundo de Mario", Snackbar.LENGTH_LONG).show();
     }
 
     @Override
