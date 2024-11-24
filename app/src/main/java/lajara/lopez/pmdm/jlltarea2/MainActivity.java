@@ -14,17 +14,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 
 import lajara.lopez.pmdm.jlltarea2.databinding.ActivityMainBinding;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private ActivityMainBinding binding;
 //    private AppBarConfiguration appBarConfiguration;
-
 
 
     @Override
@@ -58,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        navController.addOnDestinationChangedListener(this::onChangeView);
 // Configurar toggle para el botón de menú
         toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, binding.toolbar,
@@ -86,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void onChangeView(NavController navController, NavDestination navDestination, Bundle bundle) {
+        if (toggle == null) return;
+        if (navDestination.getId() == R.id.characterDetailFragment) {
+            toggle.setDrawerIndicatorEnabled(false);
+        } else toggle.setDrawerIndicatorEnabled(true);
+
+    }
 
 
     @Override
