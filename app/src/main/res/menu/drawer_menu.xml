@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home"
+        android:id="@+id/home"
+        />
+    <item android:title="@string/settings"
+        android:id="@+id/settings"/>
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/Exit"
+       />
+
+</menu>
