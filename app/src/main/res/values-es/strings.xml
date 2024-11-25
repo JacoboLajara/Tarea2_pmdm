@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarea 2</string>
+    <string name="lista_de_personajes" />
+    <string name="character_name">Nombre de Personaje</string>
+    <string name="about">Acerca de</string>
+    <string name="home">Home</string>
+    <string name="settings">Ajustes</string>
+    <string name="header_image_desc">profile image</string>
+    <string name="username">usuario</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_language">Cambio de idioma</string>
+    <string name="character_name_new">Nombre de personaje</string>
+    <string name="description">Descripcion</string>
+    <string name="skills">Habilidades</string>
+</resources>

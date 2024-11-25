@@ -14,4 +14,8 @@
         android:id="@+id/characterListFragment"
         android:name="lajara.lopez.pmdm.jlltarea2.CharacterListFragment"
         android:label="CharacterListFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="lajara.lopez.pmdm.jlltarea2.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>

@@ -21,6 +21,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Objects;
+
 import lajara.lopez.pmdm.jlltarea2.databinding.ActivityMainBinding;
 
 
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             if (id == R.id.home) {
                 navController.navigate(R.id.characterListFragment);
             } else if (id == R.id.settings) {
-                navController.navigate(R.id.settings);
+                navController.navigate(R.id.settingsFragment);
             }
             drawerLayout.closeDrawer(GravityCompat.START);
             return true;
@@ -84,13 +86,37 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+//    private void onChangeView(NavController navController, NavDestination navDestination, Bundle bundle) {
+//        if (toggle == null) return;
+//        if (navDestination.getId() == R.id.characterDetailFragment) {
+//            toggle.setDrawerIndicatorEnabled(false);
+//        } else toggle.setDrawerIndicatorEnabled(true);
+//
+//    }
+
     private void onChangeView(NavController navController, NavDestination navDestination, Bundle bundle) {
         if (toggle == null) return;
-        if (navDestination.getId() == R.id.characterDetailFragment) {
-            toggle.setDrawerIndicatorEnabled(false);
-        } else toggle.setDrawerIndicatorEnabled(true);
 
+        // Verifica si estás en el fragmento específico
+        if (navDestination.getId() == R.id.characterDetailFragment) {
+            // Deshabilitar hamburguesa y mostrar botón "Atrás"
+            toggle.setDrawerIndicatorEnabled(false); // Desactiva hamburguesa
+            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true); // Muestra botón "Atrás"
+            toggle.setToolbarNavigationClickListener(view -> navController.navigateUp()); // Acción para botón "Atrás"
+        } else {
+            // Restaurar hamburguesa en las demás pantallas
+            toggle.setDrawerIndicatorEnabled(true); // Activa hamburguesa
+            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false); // Oculta botón "Atrás"
+            toggle.setToolbarNavigationClickListener(null); // Restaurar evento predeterminado
+        }
+
+        // Sincroniza siempre el toggle con el DrawerLayout
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
     }
+
+
+
 
 
     @Override
