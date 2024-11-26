@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3BBCAB</item>
+        <item name="colorOnPrimary">#FFEB3B</item>
+        <item name="colorPrimaryDark">#665A80</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Configura el color del menú hamburguesa -->
+        <item name="colorControlNormal">@color/toolbarTextColor</item>
+
+
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+</resources>

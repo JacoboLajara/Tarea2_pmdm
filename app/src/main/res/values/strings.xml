@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="lista_de_personajes">Character List</string>
+    <string name="character_name">Character name</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="Exit">Exit</string>
+
+    <string name="header_image_desc">profile image</string>
+    <string name="username">username</string>
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">close menu</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_language">Change language</string>
+    <string name="character_name_new">Character name</string>
+    <string name="description">Description</string>
+    <string name="skills">Skills</string>
+
+    <string name="yoshi_name">Yoshi</string>
+    <string name="yoshi_description">Adorable green dinosaur</string>
+    <string name="yoshi_skills">Swallows enemies</string>
+
+    <string name="mario_name">Mario</string>
+    <string name="mario_description">Wears blue overalls and an M cap</string>
+    <string name="mario_skills">Jumps and throws fireballs</string>
+
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">The princess of the Mushroom Kingdom</string>
+    <string name="peach_skills">Bravery and cleverness</string>
+
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Luigi is Mario is younger brother and partner</string>
+    <string name="luigi_skills">Can jump higher than Mario</string>
+    <string name="snack_text">Welcome Mario \'s World</string>
+    <string name="acerca_de">About:</string>
+    <string name="developed_by">Application developed by Jacobo Lajara Lopez, version 1.0</string>
+    <string name="exit_confirm">Do you really want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="super_mario">Super Mario</string>
+    <string name="character_selected">The character that has been selected is: </string>
+    <string name="detalles_del_personaje">Character details</string>
+    <string name="pantalla_principal">Main screen</string>
+
+
+</resources>

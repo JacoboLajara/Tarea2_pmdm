@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/toolbarTextColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Configura el color del menú hamburguesa -->
+        <item name="colorControlNormal">@color/toolbarTextColor</item>
+
+        <!-- SplashScreen cofiguration-->
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">
+            @color/colorPrimary
+        </item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/mario
+        </item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">2000</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:ignore="NewApi">
+            @color/colorPrimaryDark
+        </item>
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+</resources>

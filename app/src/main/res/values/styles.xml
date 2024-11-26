@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BlueTextCentered" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/greatvibes</item>
+        <item name="android:textColor">#0000FF</item> <!-- Color azul -->
+        <item name="android:textSize">30dp</item>     <!-- Tamaño de texto -->
+        <item name="android:gravity">center</item>    <!-- Centrado -->
+    </style>
+
+    <style name="descriptionTextCentered" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/carnevale</item>
+        <item name="android:textColor">#FF0000</item> <!-- Color azul -->
+        <item name="android:textSize">18sp</item>     <!-- Tamaño de texto -->
+        <item name="android:gravity">center</item>    <!-- Centrado -->
+    </style>
+
+    <style name="skillTextCentered" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/blackha</item>
+        <item name="android:textColor">#06F810</item> <!-- Color azul -->
+        <item name="android:textSize">18sp</item>     <!-- Tamaño de texto -->
+        <item name="android:gravity">center</item>    <!-- Centrado -->
+    </style>
+
+    <style name="ListTextCentered" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/blackha</item>
+        <item name="android:textColor">#06F810</item> <!-- Color azul -->
+        <item name="android:textSize">18sp</item>     <!-- Tamaño de texto -->
+        <item name="android:gravity">center</item>    <!-- Centrado -->
+    </style>
+
+    <style name="detailImageStyle">
+        <item name="android:layout_width">250sp</item>  <!-- Ancho del ImageView -->
+        <item name="android:layout_height">400sp</item> <!-- Alto del ImageView -->
+        <item name="android:scaleType">centerCrop</item> <!-- Cómo se escala la imagen -->
+        <item name="android:layout_margin">8dp</item>   <!-- Margen alrededor -->
+        <item name="android:background">#FF9800</item> <!-- Fondo del ImageView -->
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#FF6200EE</item> <!-- Fondo blanco -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Texto principal -->
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item> <!-- Estilo de botones -->
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FF6200EE</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarea 2</string>
+    <string name="lista_de_personajes">Lista de personajes</string>
+    <string name="character_name">Nombre de Personaje</string>
+    <string name="about">Acerca de</string>
+    <string name="home">Principal</string>
+    <string name="settings">Ajustes</string>
+    <string name="Exit">Salir</string>
+    <string name="header_image_desc">profile image</string>
+    <string name="username">usuario</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_language">Cambio de idioma</string>
+    <string name="character_name_new">Nombre de personaje</string>
+    <string name="description">Descripcion</string>
+    <string name="skills">Habilidades</string>
+    <string name="yoshi_name">Yoshi</string>
+    <string name="yoshi_description">Adorable dinosaurio verde</string>
+    <string name="yoshi_skills">Traga enemigos</string>
+    <string name="mario_name">Mario</string>
+    <string name="mario_description">Lleva peto azul y la inicial M en su gorra</string>
+    <string name="mario_skills">Salta y lanza bolas de fuego</string>
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Es la princesa del Reino Champiñón</string>
+    <string name="peach_skills">Valentía y astucia</string>
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Luigi es el hermano menor de Mario y su compi</string>
+    <string name="luigi_skills">Puede saltar más alto que Mario</string>
+    <string name="snack_text">Bienvenidos al mundo de Mario</string>
+    <string name="acerca_de">acerca de:</string>
+    <string name="developed_by">Aplicacion desarrollada por Jacobo Lajara Lopez version 1.0</string>
+    <string name="exit_confirm">¿Seguro que quieres salir?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="super_mario">Super Mario</string>
+    <string name="character_selected">El personaje que se ha seleccionado es: </string>
+    <string name="detalles_del_personaje">Detalles del personaje</string>
+    <string name="pantalla_principal">Pantalla Principal</string>
+</resources>
